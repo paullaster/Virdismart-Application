@@ -1,0 +1,112 @@
+.scanner{
+    background:$primary-main-color;
+    width: 100%;
+    padding: $big $normal;
+
+    &___camframe{
+       // background:orangered;
+        position: relative;
+        // margin-top:$medium-extra-large;
+        width: 90%;
+        height: 100vh;
+        margin:0 auto;
+        padding:$normal $normal;
+        border-bottom:.1em solid $color-grey-dark;
+
+        &__camera{
+            position: absolute;
+            top:20%;
+            left:30.5%;
+            //border: .2em solid $color-grey-dark;
+            
+            &__video{
+                width: 70%;
+                border: .2em solid $color-grey-dark;
+                border-radius: 1.5em;
+                box-shadow: 0 .4em 1.1em 0 rgba(0, 0, 0, 0.3);
+
+            }
+        }
+        &__btn{
+            position: absolute;
+            top: 70%;
+            left:30%;
+
+            &__front{
+                display: inline-block;
+                text-transform: capitalize;
+                font-weight: 600;
+                font-size: $small;
+                font-family:inherit;
+                background:$color-white;
+                margin-right: $small;
+                border-radius: .4em;
+                box-shadow: 0 .4em .6em 0 rgba(0, 0, 0, 0.153);
+                padding:.5em;
+                margin-top:$m-small;
+            }
+            &__input{
+                display: none;
+            }
+            &__back{
+                display: inline-block;
+                text-transform: capitalize;
+                font-weight: 600;
+                font-size: $small;
+                font-family:inherit;
+                background:$color-grey-dark-2;
+                border-radius: .4em;
+                box-shadow: 0 .4em .6em 0 rgba(0, 0, 0, 0.153);
+                padding:.5em;
+                margin-top:$m-small;
+            }
+        }
+    }
+    &__user{
+        border-bottom: .2em solid $color-primary-light;
+        width: 90%;
+        margin-left:3.3em;
+        &__paragraph{
+            font-family: inherit;
+            font-size:$small;
+            text-align: center;
+            padding:$small 0;
+            text-shadow: .1em .7em 1.4em rgba(0, 0, 0, 0.5);
+
+            &__message{
+                display:inline-block;
+                
+                &::first-letter{
+                    text-transform: capitalize;
+                }
+            }
+
+            &__data{
+                display:inline-block;
+                 text-transform: capitalize;
+            }
+        }
+    }
+    &__light{
+        padding:$large $m-small;
+
+        &__paragraph{
+            text-align: center;
+            font-size:$small;
+            font-family:inherit;
+            text-shadow: .1em .7em 1.4em rgba(0, 0, 0, 0.5);
+            &__torch{
+                display: block;
+                padding:$xsmall 0;
+            }
+
+            &__caption{
+                display: block;
+
+                &::first-letter{
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

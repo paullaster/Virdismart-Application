@@ -1,0 +1,391 @@
+//section for the shop page
+.beverages{
+    width: 100%;
+    // margin-left: $medium;
+    // margin-right: $medium;
+    background: $color-primary-light;
+
+    &__content{
+        padding:$normal $big;
+        margin-bottom: $normal;
+
+        &__info{
+            width: 80%;
+
+            &__heading{
+                display: block;
+                text-transform: capitalize;
+                font-size: $m-small;
+                font-family: inherit;
+                padding-bottom: $xsmall;
+                text-shadow: .1em .9em 1.6em rgba(0, 0, 0, 0.61);
+                padding-top:$medium;
+            }
+        
+            &__secondary{
+                padding-bottom: $xsmall;
+                display:block;
+                text-transform: capitalize;
+                font-size: $m-small;
+                text-shadow: .1em .9em 1.6em rgba(0, 0, 0, 0.61);
+            }
+            &__price{
+                display: block;
+                text-transform:capitalize;
+                font-size: $normal;
+                text-shadow: .1em .9em 1.6em rgba(0, 0, 0, 0.61);
+                font-family:inherit;
+            }
+        }
+
+        &__image{
+            display: block;
+            width: 100%;
+            height: 20em;
+            box-shadow: .1em 2em 4em 0 rgba(0, 0, 0, 0.397);
+            border-radius: 1.5em;
+        }
+    }
+    
+}
+.snacks{
+    background: $color-secondary-light-1;
+    margin-top: -2.5em;
+
+    &__content{
+        padding: $normal $big;
+
+        &__info{
+            width: 80%;
+
+            &__image{
+                display: block;
+                width: 100%;
+                height:20em;
+                box-shadow: .1em 2em 4em 0 rgba(0, 0, 0, 0.397);
+                border-radius: 1.5em;
+            }
+
+            &__caption{
+                display:block;
+                text-transform: capitalize;
+                color:$primary-main-picker;
+                font-size:$normal;
+                font-family:inherit;
+                font-weight: 700;
+                text-shadow: .1em 1em 2em rgba(0, 0, 0, 0.81);
+                text-align:center;
+            }
+
+        }
+    }
+}
+
+//registration page
+
+//kijani coins
+.points{
+    margin: $medium $medium;
+
+    &__earned{
+        position: relative;
+        background: $color-primary-light;
+        width: 90%;
+        height: 70vh;
+        margin-left: $normal;
+        box-shadow: .1em 1em 2em 0 rgba(0, 0, 0, 0.5) ;
+        border-radius: 1.2em;
+
+        &__display{
+            display: block;
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            width: 50%;
+            height: 40vh;
+            background: transparent;
+            border: none;
+
+            &::-webkit-input-placeholder{
+                color:$color-black;
+                text-align: center;
+                font-size:$medium-big;
+
+            }
+        }
+    }
+}
+//pages in kijani page
+.pages{
+    margin: $medium $medium;
+    
+    &__information{
+        padding:$medium $medium;
+        position:relative;
+        //border-bottom: .1.5em solid $color-grey-dark;
+       
+    }
+}
+
+.news{
+    background: $color-gray-light;
+   
+  &__area{
+      background: transparent;
+      padding:$medium $medium;
+      border: .1em solid $color-grey-dark;
+      box-shadow: .1em .8em 1.8em 0 rgba(0, 0, 0, 0.603);
+
+      &__slider{
+        padding:$extra-bigger $extra-bigger;
+      }
+  }
+
+}
+.purchase{
+    background:transparent;
+    
+    &__goals{
+        margin:$big $big;
+        padding: $big $big;
+
+        &__input{
+            display: block;
+           margin: $medium-big 0;
+          margin-left:15em;
+            width: 20em;
+            border: .5em double $primary-main-sky-color;
+            height: 40vh;
+            border-radius:50%;
+            background:transparent;
+            box-shadow:.1em .8em 1.7em 0 rgba(0, 0, 0, 0.486);
+            &::-webkit-input-placeholder{
+                color:$color-black;
+                text-align: center;
+                font-size:$big;
+
+            }
+        }
+        &__paragraph{
+            //margin-left:-10em;
+            position: absolute;
+            //top: 53%;
+            //left: 40%;
+            margin-top:10em;
+           
+           
+
+            &__item{
+                display:block;
+                padding: $xsmall;
+                font-size:$m-small;
+
+                &::first-letter{
+                    text-transform: capitalize;
+                }
+
+            }
+        }
+        
+    }
+}
+.bin{
+    background:transparent;
+
+    &__goals{
+        margin:$big $big;
+        padding: $big $big;
+
+        &__input{
+            display: block;
+           margin-top: $xsmall;
+            margin-left: $extra-large;
+            width: 20em;
+            border: .5em double $primary-main-sky-color;
+            height: 40vh;
+            border-radius:50%;
+            background:transparent;
+             box-shadow:.1em .8em 1.7em 0 rgba(0, 0, 0, 0.486);
+            &::-webkit-input-placeholder{
+                color:$color-black;
+                text-align: center;
+                font-size:$big;
+
+            }
+        }
+        &__paragraph{
+            //margin-left:-10em;
+            position: absolute;
+            // top: 83%;
+            // left: 40%;
+            margin-top:5em;
+
+            &__item{
+                display:block;
+                padding: $xsmall;
+                font-size:$m-small;
+
+                &::first-letter{
+                    text-transform: capitalize;
+                }
+
+            }
+        }
+        
+    }
+}
+.promotion{
+    background:transparent;
+    
+    &__earned{
+        margin:$normal $big;
+        padding: $small $big;
+        background:rgba($color-tertiary-blue,0.45);
+
+        &__input{
+            display: block;
+           margin: $medium-big 0;
+           margin-left: $medium-extra-large;
+            width: 20em;
+            border: .5em double $primary-main-sky-color;
+            height: 40vh;
+            border-radius:50%;
+            background:transparent;
+            box-shadow:.1em .8em 1.7em 0 rgba(0, 0, 0, 0.486);
+            &::-webkit-input-placeholder{
+                color:$color-black;
+                text-align: center;
+                font-size:$big;
+
+                &:focus{
+                    outline:none;
+                }
+            }
+        }
+        &__paragraph{
+            //margin-left:-10em;
+            position: absolute;
+           // top: 53%;
+           // left: 40%;
+           margin-top:10em;
+          
+
+            &__item{
+                display:block;
+                padding: $xsmall;
+                font-size:$m-small;
+
+                &::first-letter{
+                    text-transform: capitalize;
+                }
+
+            }
+        }
+        
+    }
+}
+.message{
+    background: transparent;
+    padding: $normal $normal;
+
+    &__value{
+        border-bottom: .2em solid $color-primary-light;
+        width: 100%;
+        //margin-left:3.3em;
+        &__paragraph{
+            font-family: inherit;
+            font-size:$small;
+            text-align: center;
+            padding:$small 0;
+            text-shadow: .1em .7em 1.4em rgba(0, 0, 0, 0.5);
+
+            &__greetings{
+                display:inline-block;
+                
+                &::first-letter{
+                    text-transform: capitalize;
+                }
+            }
+
+            &__user{
+                display:inline-block;
+                 text-transform: capitalize;
+            }
+        }
+    }
+}
+.kijani{
+    background: transparent;
+    padding: $normal $normal;
+
+    &__link{
+        padding: $normal $normal;
+        //text-align: center;
+        position: relative;
+        &__btn{
+            display: block;
+            background:$color-primary-light;
+            padding:$xsmall 0;
+            font-size:$small;
+            text-transform:capitalize;
+            text-decoration:none;
+            text-align: center;
+            color:$color-black;
+            width: 28%;
+            position: absolute;
+            top:8%;
+            left:36%;
+            border-radius: .5em;
+            box-shadow: .1em .6em 1.4em 0 rgba(8, 8, 8, 0.301);
+            transition: all 1s ease;
+
+            &:hover{
+                color:$color-primary-light;
+                background:$color-black;
+                text-decoration:none;
+            }
+        }
+    }
+}
+.services{
+    background:transparent;
+    padding:$normal $normal;
+
+    &__bar{
+        padding: $normal;
+        
+        &__paragraph{
+            &__link{
+                display:block;
+               text-decoration:none;
+               text-align:center;
+               transition: all 1s ease;
+                &__caption{
+                    display:block;
+                    color:rgba($color-heavy-grey, .5);
+                    font-size:$small;
+                    text-transform: capitalize;
+                    padding:$xsmall;
+
+                    &__style{
+                        display:inline-block;
+                        text-transform: uppercase;
+                    }
+                }
+                &:hover{
+                    color:$color-black;
+                    background:transparent;
+                    text-decoration:none;
+                    //padding:$xsmall;
+                    cursor: pointer;
+
+                } 
+            }
+        }
+    }
+}
+//styling font-awesome icons used in this section 
+.styleIcon{
+   display: block;
+    color:$color-black;
+}

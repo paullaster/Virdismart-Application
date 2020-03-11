@@ -1,0 +1,4 @@
+/* line 1, SASS/layouts/_heading.scss */
+.heading-primary {
+  font-size: 4.5em;
+  text-align: center; }

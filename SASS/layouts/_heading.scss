@@ -1,0 +1,30 @@
+.heading{
+    &__primary{
+        font-family: inherit;
+        padding-bottom: $small;
+        font-weight: 900;
+        font-family: inherit;
+        font-size: $normal;
+        text-align: center;
+        text-transform: capitalize;
+        text-shadow: .1em .7em 1.3em rgba(0, 0, 0, 0.61);
+        @include respond(phone){
+            font-size:$xsmall;
+            font-weight:900;
+            padding:1.2em .7em;
+            text-shadow: .1em .7em 1.3em rgba(0, 0, 0, 0.603);
+        }
+            
+        }
+    &__secondary{
+        font-family: inherit;
+        font-weight:600;
+        text-align:center;
+        font-size:$m-small;
+        text-transform: capitalize;
+        text-shadow: .1em 1.4em 2.3em rgba(0, 0, 0, 0.507);
+    }
+
+}
+    
+    

@@ -1,0 +1,16 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 92.5%;
+}
+body{
+    box-sizing: border-box;
+    font-family: Georgia,Times, serif;
+    padding: 1.2em;
+    border: .1em  solid $color-grey-dark;
+    background:$color-grey-dark-2;
+
+}

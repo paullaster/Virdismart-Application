@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="apple-touch-icon" sizes="57x57" href="../IMAGES/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../IMAGES/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../IMAGES/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../IMAGES/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../IMAGES/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../IMAGES/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../IMAGES/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../IMAGES/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../IMAGES/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../IMAGES/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../IMAGES/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../IMAGES/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../IMAGES/favicon-16x16.png">
+    <link rel="manifest" href="../IMAGES/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../IMAGES/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../CSS/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.css">
+    <!-- <style>
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style> -->
+  </head>
+  <body>
+      <div class="locate">
+        <header class="header">
+            <aside class="header__side">
+                <div class="header__side__part">
+                    <div class="header__side__part__one">
+                        <ul class="side-bar--navigation">
+                            <li class="side-bar--navigation__list-detals">
+                                <p class="side-bar--navigation__list-details-content">
+                                    <span class="side-bar--navigation__list-details-content_profile"> <i class="fas fa-user-circle"></i></span>   
+                                    <span class="side-bar--navigation__list-details-content_name">Erick Mwirichia</span>
+                                    <span class="side-bar--navigation__list-details-content_message">protecting today, tomorrow and the future</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__side__part__two__navigation">
+                        <ul class="header__side__part__two__navigation">
+                            <li class="side-bar--navigation__list-account">
+                                <a href="#" class="side-bar--navigation__list-account-link">account</a>
+                            </li>
+                            <li class="side-bar--navigation__list-help">
+                                <a href="#" class="side-bar--navigation__list-help-link">help</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__side__part__three">
+                        <ul class="header__side__part__three__navigation">
+                            <li class="side-bar--navigation__list-about-us">
+                                <a href="#" class="side-bar--navigation__list-about-us__link">about us</a>
+                            </li>
+                            <li class="side-bar--navigation__list-settings">
+                                <a href="#" class="side-bar--navigation__list-settings-link">settings</a>
+                            </li>
+                            <li class="side-bar--navigation__list-connect">
+                                <p class="side-bar--navigation__list-connect-content">
+                                    <span class="side-bar--navigation__list-connect-content__heading">connect</span>
+                                    <span class="side-bar--navigation__list-connect-content-fb">
+                                        <a href="#" class="side-bar--navigation__list-connect-content-fb--link">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </span>
+                                    <span class="side-bar--navigation__list-connect-content-twitter">
+                                        <a href="#" class="side-bar--navigation__list-connect-content-twitter--link">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </span>
+                                    <span class="side-bar--navigation__list-connect-content-instagram">
+                                        <a href="#" class="side-bar--navigation__list-connect-content-instagram--link">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </span>
+                                    <span class="side-bar--navigation__list-connect-content-linkdin">
+                                        <a href="#" class="side-bar--navigation__list-connect-content-linkdin--link">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+            </aside>
+        </header>
+       <main>
+           <section class="google-map">
+                    <!--The div element for the map -->
+                    <div  class="map" id="map">
+                        <?php
+                        include("../PHP/inde.php");
+                        include("../PHP/geoplugin.class.php");
+                        ?>
+                    </div>
+                    <script src="../JS/map.js" async defer></script>
+                    <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDsS8bEk7hXKEbU9FzFDr4Y6iWv-2NxmA&callback=initMap">
+                    </script>
+           </section>
+           <section class="message">
+               <div class="message__value">
+                   <p class="message__value__paragraph">
+                       <span class="message__value__paragraph__greetings">
+                        Hi,
+                       </span>
+                       <span class="message__value__paragraph__user">
+                        Erick.
+                       </span>
+                       <span class="message__value__paragraph__greetings">
+                        It's a good day to recycle
+                       </span>
+                   </p>
+               </div>
+           </section>
+           <section class="kijani">
+               <div class="kijani__link">
+                   <a href="./kijaniCoins.html" class="kijani__link__btn">kijani coins 80 </a>
+               </div>
+           </section>
+           <section class="services">
+               <div class="services__bar">
+                   <div class="row">
+                       <div class="col-1-of-2">
+                            <p class="services__bar__paragraph">
+                                <a href="./shop.html" class="services__bar__paragraph__link">
+                                <i class="fas fa-map-marker-alt fa-3x   styleIcon"></i>   
+                                <span class="services__bar__paragraph__link__caption">find shop</span>
+                                </a>
+                            </p>
+                       </div>
+                       <div class="col-1-of-2">
+                            <p class="services__bar__paragraph">
+                                <a href="./QRScanner.html" class="services__bar__paragraph__link">
+                                    <i class="fas fa-camera fa-3x   styleIcon"></i>
+                                    <span class="services__bar__paragraph__link__caption">
+                                    scan QR
+                                </span>
+                                   
+                                </a>
+                                
+                            </p>
+                       </div>
+                   </div>
+               </div>
+           </section>
+       </main>    
+      </div>
+  </body>
+</html>
+
+

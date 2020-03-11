@@ -1,0 +1,103 @@
+.btn{
+   display:block;
+   position: relative;
+   width:25em;
+   height: 5.5em;
+   margin:0 auto;
+
+    &__black{
+        background:$color-black;
+       box-shadow: .1em .6em 1em 0 rgba(0, 0, 0, 0.507); 
+       border-radius:2em;
+       border: none;
+
+       &:focus{
+           outline: none;
+       }
+        
+    }
+    &__styl__color{
+        display:block;
+        position: absolute;
+        top:.8em;
+        left:12.5em;
+        color:$color-white;
+        font-weight:900;
+        transform: scale(5.4);
+
+        
+
+    }
+    &__green{
+        display:block;
+        width:6em;
+        height:2em;
+        background: $color-tertiary-blue;
+        color:$primary-main-picker;
+        font-size:$m-2-small;
+        font-weight:700;
+        text-transform:capitalize;
+        box-shadow: .1em .6em 1em 0 rgba(0, 0, 0, 0.521);
+        border-radius:.5em;
+        border: none;
+
+        &:focus{
+            outline: none;
+        }
+    }
+    &__link{
+        background:transparent;
+        display:block;
+    }
+   
+    @include respond(phone){
+        box-shadow: .1em .6em 1em 0 rgba(0, 0, 0, 0.5); 
+        display:block;
+   position: relative;
+   width:5em;
+   height: 1.5em;
+   margin:0 auto;
+    &__black{
+        background:$color-black;
+        
+        
+    }
+    &__styl__color{
+        display:block;
+        position: absolute;
+        top:.8em;
+        left:12.5em;
+        color:$color-white;
+        font-weight:900;
+        transform: scale(.4);
+        
+
+    }
+    &__green{
+        display:block;
+        width:3em;
+        height:.8em;
+        background: $color-tertiary-blue;
+        color:$primary-main-picker;
+        font-size:$m-small;
+        font-weight:700;
+        text-transform:capitalize;
+        box-shadow: .1em .6em 1em 0 rgba(0, 0, 0, 0.521);
+        border-radius:10em;
+    }
+    }
+}
+.awesome-icon{
+    display:block;
+    text-decoration: none;
+    position:absolute;
+    right:50%;
+    // box-shadow:.1em .8em 1.2em 0 rgba(0, 0, 0, 0.507);
+    animation: moveLeft;
+    animation-duration:.3s;
+    animation-timing-function:ease;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    background:transparent;
+}

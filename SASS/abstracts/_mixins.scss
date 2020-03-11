@@ -1,0 +1,84 @@
+//this clearfix mixin help regain the height of floated rows
+@mixin clearFix {
+    &::after{
+ content: "";
+ display: table;
+ clear: both;
+    }
+}
+// position
+@mixin absCenter{
+position:absolute;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+
+
+
+
+}
+
+
+// media queries for responsive design
+
+// the media queries applied here is desktop-first approach.
+
+//these queries will be written based on the following breakpoints
+
+/*
+0 - 600px        phones
+600px - 900px    tablet portrait
+900px - 1200px   tablet landscape
+1200px - 1800px  normal styles applies
+1800px ++        big desktop screens
+
+*/
+
+/*
+@mixin respond-phone{
+
+    @media (max-width : 600px){@content};
+}
+
+*/
+
+/*
+for my case i will use parametized mixin.
+
+$breakpoint
+
+the argument that can be passed to the parameter are;
+-phone
+-tab-port (for tablet portrait)
+-tab-land (for tablet landscape)
+-big-scrn (for big screens)
+*/
+
+// 1em = 16px
+
+@mixin respond($breakpoint) {
+
+    @if $breakpoint == big-scrn{
+
+        @media only screen and (min-width: 112.5em){@content};  //1800px
+    }
+    @if $breakpoint == tab-land{
+
+        @media only screen and (max-width: 75em){@content}; //1200px
+    }
+
+    @if $breakpoint == tab-port{
+
+        @media only screen and (max-width: 56.25em){@content}; //900px
+    }
+    
+    @if $breakpoint == phone{
+
+        @media only screen and (max-width: 37.5em){@content}; //600px
+    }
+   
+
+
+    
+}
+

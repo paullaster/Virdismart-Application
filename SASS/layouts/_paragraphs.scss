@@ -1,0 +1,15 @@
+.paragraph{
+    display:block;
+    color:$color-heavy-grey;
+    text-align:center;
+    font-family:inherit;
+    font-size:$m-small;
+    &::first-letter{
+        text-transform: uppercase;
+    }
+    &__icons{
+        display:block;
+        text-align:center;
+       color:$color-tertiary-blue;
+    }
+}

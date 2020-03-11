@@ -1,0 +1,32 @@
+//this the main file where all the sass file are imported!
+//this was initially developed by paullaster
+// the importation is done alphabetically
+//importing abstract folder
+@import "./abstracts/variable";
+@import "./abstracts/mixins";
+
+
+//importing base folder
+@import "./base/utilities";
+
+//importing components
+@import "./components/appReset";
+@import "./components/form";
+@import "./components/links";
+@import "./components/button";
+@import "./components/map";
+@import "./components/scanner";
+
+//importing layout folder
+@import "./layouts/grid";
+@import "./layouts/heading";
+@import "./layouts/paragraphs";
+@import "./layouts/sections";
+
+
+//importing pages folder
+@import "./pages/registration";
+@import "./pages/kijani";
+@import "./pages/points";
+@import "./pages/locate";
+@import "./pages/login";
